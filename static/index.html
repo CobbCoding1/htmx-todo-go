@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>TODO: TODO</title>
+		<title>TODO: LIST</title>
 		<script src="https://unpkg.com/htmx.org@1.9.10"></script>
 	</head>
 	<body>
-		<h1>Test</h1>
-		<form hx-post="/add" hx-target="none">
+		<h1>Todo</h1>
+		<form hx-post="/add" hx-target="#results">
 			<input
 			name="input"
 			type="text"
@@ -20,4 +20,3 @@
 		<h1 id="search-results">
 	</body>
 </html>
-
