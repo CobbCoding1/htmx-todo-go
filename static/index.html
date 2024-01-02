@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>TODO: TODO</title>
+		<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+	</head>
+	<body>
+		<h1>Test</h1>
+		<form hx-post="/add" hx-target="none">
+			<input
+			name="input"
+			type="text"
+			placeholder="TODO..." 
+			>
+		</form>
+
+		<ul>
+			<div hx-get="/data" hx-trigger="every 1s" id="results">
+		</ul>
+		<h1 id="search-results">
+	</body>
+</html>
+
